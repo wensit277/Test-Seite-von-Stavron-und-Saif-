@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="de" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vera Restaurant & Café | Köln</title>
+    <!-- Tailwind CSS für High-End-Design -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome für Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .hero-bg {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="bg-gray-950 text-gray-100 font-sans antialiased">
+
+    <!-- Navbar -->
+    <nav class="fixed top-0 left-0 w-full z-50 bg-gray-900/90 backdrop-blur-md border-b border-gray-800">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="#" class="text-2xl font-black tracking-wider text-amber-500">VERA<span class="text-white">.</span></a>
+            <div class="hidden md:flex space-x-8 text-sm font-medium">
+                <a href="#menu" class="hover:text-amber-500 transition">Speisekarte</a>
+                <a href="#about" class="hover:text-amber-500 transition">Über uns</a>
+                <a href="#contact" class="hover:text-amber-500 transition">Kontakt & Anfahrt</a>
+            </div>
+            <a href="https://wa.me/4917666685940?text=Hallo,%20ich%20würde%20gerne%20einen%20Tisch%20reservieren!" target="_blank" class="bg-amber-500 hover:bg-amber-600 text-gray-950 font-bold px-5 py-2.5 rounded-full text-sm transition shadow-lg shadow-amber-500/20">
+                <i class="fa-brands fa-whatsapp mr-2"></i>Tisch reservieren
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-bg min-h-screen flex items-center justify-center text-center px-6 pt-20">
+        <div class="max-w-3xl">
+            <span class="text-amber-400 font-semibold uppercase tracking-widest text-xs bg-amber-500/10 px-3 py-1 rounded-full border border-amber-500/20">Echtes Handwerk in Köln</span>
+            <h1 class="text-4xl md:text-6xl font-black mt-6 mb-6 leading-tight">Genuss, der in Erinnerung bleibt.</h1>
+            <p class="text-gray-300 text-lg md:text-xl mb-8">Erleben Sie traditionelle Küche und moderne Gastfreundschaft im Herzen von Ehrenfeld.</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#menu" class="bg-amber-500 hover:bg-amber-600 text-gray-950 font-bold px-8 py-4 rounded-xl transition shadow-xl">Speisekarte ansehen</a>
+                <a href="#contact" class="bg-gray-800/80 hover:bg-gray-700 text-white font-semibold px-8 py-4 rounded-xl border border-gray-700 transition">Standort & Öffnungszeiten</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Menü Section -->
+    <section id="menu" class="py-24 px-6 max-w-6xl mx-auto">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-extrabold mb-4">Unsere Empfehlungen</h2>
+            <p class="text-gray-400">Frisch zubereitet mit den besten Zutaten der Region.</p>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-8">
+            <!-- Gericht 1 -->
+            <div class="bg-gray-900 border border-gray-800 p-6 rounded-2xl flex items-center justify-between hover:border-amber-500/50 transition">
+                <div>
+                    <h3 class="text-xl font-bold mb-1">Vera Spezial Grillplatte</h3>
+                    <p class="text-gray-400 text-sm">Zartes Fleisch, dazu frischer Salat und Hausbrot.</p>
+                </div>
+                <span class="text-amber-400 font-bold text-xl">18,50 €</span>
+            </div>
+            <!-- Gericht 2 -->
+            <div class="bg-gray-900 border border-gray-800 p-6 rounded-2xl flex items-center justify-between hover:border-amber-500/50 transition">
+                <div>
+                    <h3 class="text-xl font-bold mb-1">Trüffel Pasta Handgemacht</h3>
+                    <p class="text-gray-400 text-sm">Mit frischem Parmesan und feiner Trüffelsoße.</p>
+                </div>
+                <span class="text-amber-400 font-bold text-xl">14,90 €</span>
+            </div>
+            <!-- Gericht 3 -->
+            <div class="bg-gray-900 border border-gray-800 p-6 rounded-2xl flex items-center justify-between hover:border-amber-500/50 transition">
+                <div>
+                    <h3 class="text-xl font-bold mb-1">Orientalischer Mezze Teller</h3>
+                    <p class="text-gray-400 text-sm">Eine Auswahl unserer besten kalten & warmen Vorspeisen.</p>
+                </div>
+                <span class="text-amber-400 font-bold text-xl">12,00 €</span>
+            </div>
+            <!-- Gericht 4 -->
+            <div class="bg-gray-900 border border-gray-800 p-6 rounded-2xl flex items-center justify-between hover:border-amber-500/50 transition">
+                <div>
+                    <h3 class="text-xl font-bold mb-1">Hausgemachter Kunefe</h3>
+                    <p class="text-gray-400 text-sm">Warm serviert mit Pistazien und Vanilleeis.</p>
+                </div>
+                <span class="text-amber-400 font-bold text-xl">7,50 €</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Google Maps & Contact Section -->
+    <section id="contact" class="py-24 bg-gray-900/50 border-t border-gray-900 px-6">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+            <div>
+                <h2 class="text-3xl font-extrabold mb-6">Besuchen Sie uns</h2>
+                <p class="text-gray-300 mb-6">Kommen Sie vorbei und genießen Sie die Atmosphäre. Keine Reservierung nötig, aber empfohlen!</p>
+                <ul class="space-y-4 text-gray-400">
+                    <li><i class="fa-solid fa-location-dot text-amber-500 mr-3"></i> Venloer Straße 123, 50823 Köln</li>
+                    <li><i class="fa-solid fa-clock text-amber-500 mr-3"></i> Täglich von 11:30 – 23:00 Uhr</li>
+                    <li><i class="fa-solid fa-phone text-amber-500 mr-3"></i> +49 221 12345678</li>
+                </ul>
+            </div>
+            <div class="rounded-2xl overflow-hidden border border-gray-800 h-80 shadow-2xl">
+                <!-- Google Maps Embed Beispiel Köln -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2499.377987258925!2d6.9179!3d50.9413!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTDCsDU2JzI4LjciTiA2wrA1NScwNC40IkU!5e0!3m2!1sde!2sde!4v1620000000000!5m2!1sde!2sde" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 text-center text-xs text-gray-500 border-t border-gray-900">
+        <p>&copy; 2026 VERA Restaurant. Designed & Developed by IT Bros.</p>
+    </footer>
+
+    <!-- Floating WhatsApp Button (Immer sichtbar unten rechts) -->
+    <a href="https://wa.me/4917666685940?text=Hallo,%20ich%20interessiere%20mich%20für%20eine%20Website!" target="_blank" class="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white w-14 h-14 rounded-full flex items-center justify-center text-2xl shadow-2xl transition transform hover:scale-110 z-50">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+</body>
+</html>
